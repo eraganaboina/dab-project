@@ -24,13 +24,13 @@ resources:
       tasks:
         - task_key: customer_360
           notebook_task:
-            notebook_path: ../src/customer_360
+            notebook_path: ../src/customer_360.ipynb
             source: WORKSPACE
-        - task_key: transctions_summary
+        - task_key: transactions_summary
           depends_on:
             - task_key: customer_360
           notebook_task:
-            notebook_path: ../src/transactions_summary
+            notebook_path: ../src/transactions_summary.ipynb
             source: WORKSPACE
 
       environments:
