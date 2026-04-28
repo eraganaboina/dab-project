@@ -22,7 +22,7 @@ targets:
     # See also https://docs.databricks.com/dev-tools/bundles/deployment-modes.html.
     mode: development
     presets:
-      name_prefix: dev_
+      name_prefix: dev_${workspace.current_user.short_name}
     default: true
     workspace:
       host: https://dbc-da407ca1-a4f4.cloud.databricks.com
